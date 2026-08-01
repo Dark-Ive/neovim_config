@@ -10,7 +10,7 @@ vim.api.nvim_set_hl(0, 'MiniIndentscopeSymbol', { fg = "#fabd2f" })
 
 vim.opt.cursorline = true
 
-vim.wo.number = false
+vim.wo.number = true
 vim.wo.relativenumber = true
 
 vim.diagnostic.config({

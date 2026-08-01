@@ -15,14 +15,13 @@ return {
 			border = "rounded",
 		},
 	},
-    keymap = { preset = 'default' },
 
     appearance = {
       use_nvim_cmp_as_default = true,
       nerd_font_variant = 'mono'
     },
 
-    completion = { 
+    completion = {
 		documentation = { auto_show = false, window = { border = "rounded", }, },
 		ghost_text = {
 			enabled = false,
