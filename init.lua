@@ -9,6 +9,8 @@ vim.api.nvim_set_hl(0, "CursorLine", {bg = "#2a2a2a"})
 vim.api.nvim_set_hl(0, 'MiniIndentscopeSymbol', { fg = "#fabd2f" })
 
 vim.opt.cursorline = true
+vim.opt.cursorline = true
+vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#F87C63", bg = "NONE"})
 
 vim.wo.number = true
 vim.wo.relativenumber = true
