@@ -6,11 +6,10 @@ return {
   'saghen/blink.cmp',
   -- optional: provides snippets for the snippet source
   dependencies = { 'rafamadriz/friendly-snippets' },
-
   version = '1.*',
-
   opts = {
 	signature = {
+		enabled = true,
 		window = {
 			border = "rounded",
 		},
@@ -22,18 +21,18 @@ return {
     },
 
     completion = {
-		documentation = { auto_show = false, window = { border = "rounded", }, },
+	documentation = { auto_show = false, window = { border = "rounded", }, },
 		ghost_text = {
-			enabled = false,
+			enabled = true,
 		},
 		list = {
 			selection = {
-				preselect = false,
+				preselect = true,
 				auto_insert = false,
 				},
 			},
 		},
-         keymap = {
+	keymap = {
 	      preset = "default",
 	      ["<C-space>"] = { "show", "show_documentation", "hide_documentation" },
 	      ["<C-e>"] = { "hide", "fallback" },
@@ -49,7 +48,7 @@ return {
 
 	      ["<C-b>"] = { "scroll_documentation_up", "fallback" },
 	      ["<C-f>"] = { "scroll_documentation_down", "fallback" },
-    },
+    	},
 
     sources = {
       default = { 'lsp', 'path', 'snippets', 'buffer' },
