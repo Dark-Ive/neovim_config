@@ -9,7 +9,7 @@ return {
   version = '1.*',
   opts = {
 	signature = {
-		enabled = true,
+		enabled = false,
 		window = {
 			border = "rounded",
 		},
@@ -27,7 +27,7 @@ return {
 		},
 		list = {
 			selection = {
-				preselect = true,
+				preselect = false,
 				auto_insert = false,
 				},
 			},

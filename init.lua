@@ -21,12 +21,6 @@ vim.diagnostic.config({
   underline = true,
 })
 
-vim.diagnostic.config({
-  virtual_text = false,
-  signs = true,
-  underline = true,
-})
-
 vim.cmd([[
     highlight Comment gui = italic
     highlight Error gui = italic
